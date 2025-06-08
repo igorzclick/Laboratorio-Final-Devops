@@ -16,7 +16,7 @@ def home():
     return jsonify(message="A API foi postada e atualizada")
 @app.route('/items', methods=['GET'])
 def get_items():
-    return jsonify(items=["item1", "item2", "item4" ])
+    return jsonify(items=["item1", "item2", "item3"])
 @app.route('/login', methods=['POST'])
 def login():
     access_token = create_access_token(identity="user")
